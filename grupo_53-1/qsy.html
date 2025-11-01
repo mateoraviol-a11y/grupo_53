@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisitos para Streaming de Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #2980b9;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        article h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #bdc3c7;
+            padding-bottom: 10px;
+        }
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .minimo, .recomendado {
+            padding: 15px;
+            border-radius: 6px;
+        }
+        .minimo {
+            background-color: #ecf0f1;
+            border-left: 5px solid #e74c3c;
+        }
+        .recomendado {
+            background-color: #ecf0f1;
+            border-left: 5px solid #27ae60;
+        }
+        .software {
+            margin-top: 20px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .game-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+            width: 2600px;
+            height: 200px;
+        }
+        .game-images img {
+            width: 100%;
+            height: 200px;
+
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 20px;
+            border-top: 5px solid #2980b9;
+        }
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 20px 0;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guía de Requisitos para Streaming</h1>
+        <p>Los componentes mínimos y recomendados para streamear a 1080p a 60 fps.</p>
+    </header>
+
+    <div class="container">
+
+        <section id="warzone">
+            <article>
+                <h2>Call of Duty Warzone</h2>
+                <div class="game-images">
+                    <img src="cod.jpg">
+                </div>
+                <hr>
+                <div class="requirements-grid">
+                    <div class="minimo">
+                        <h3>Mínimo</h3>
+                        <ul>
+                            <li>CPU: Intel Core i3-6100 o AMD Ryzen 3 1200</li>
+                            <li>RAM: 8 GB</li>
+                            <li>GPU: NVIDIA GTX 960 o AMD RX 470 (2 GB VRAM)</li>
+                            <li>OS: Windows 10 de 64 bits</li>
+                            <li>Almacenamiento: 1 TB</li>
+                        </ul>
+                        <br>
+                        <p><strong>Nota:</strong> Para transmitir a 1080p se recomienda mejorar la gráfica, a 720p es óptimo.</p>
+                    </div>
+                    <div class="recomendado">
+                        <h3>Recomendado</h3>
+                        <ul>
+                            <li>CPU: Intel Core i5-6600K / i7-4770 o AMD Ryzen 5 1400</li>
+                            <li>RAM: 12 GB</li>
+                            <li>GPU: NVIDIA GTX 1060 o AMD RX 580 (4 GB VRAM)</li>
+                            <li>OS: Windows 10 de 64 bits</li>
+                            <li>Almacenamiento: 1 TB</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <hr>
+            <div class="software">
+                <h2>Software para el Stream</h2>
+                <p>Las siguientes herramientas son recomendadas para una experiencia de streaming óptima:</p>
+                <ul>
+                    <li><strong>OBS Studio:</strong> Usado para streamear.</li>
+                    <li><strong>Streamlabs:</strong> Usado para las alertas.</li>
+                    <li><strong>Voicemeeter:</strong> Para controlar audio de micrófono, música y juego.</li>
+                    <li><strong>Irium Webcam:</strong> Usado para obtener micrófono y webcam del celular, dando la posibilidad de consumir menos recursos y además obteniendo conexión inalámbrica.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="pubg">
+            <article>
+                <h2>PUBG Battlegrounds</h2>
+                <div class="game-images">
+                    <img src="pug.jpg" >
+
+                </div>
+                <hr>
+                <div class="requirements-grid">
+                    <div class="minimo">
+                        <h3>Mínimo</h3>
+                        <ul>
+                            <li>CPU: Intel i5-4430 o AMD FX-6300</li>
+                            <link rel="stylesheet" href="">
+                            <li>RAM: 8 GB</li>
+                            <link rel="stylesheet" href="">
+                            <li>GPU: NVIDIA GTX 960 o AMD Radeon R7 370 (2 GB VRAM)</li>
+                            <link rel="stylesheet" href="">
+                            <li>OS: Windows 10 de 64 bits</li>
+                            <link rel="stylesheet" href="">
+                            <li>Almacenamiento: 1 TB</li>
+                            <link rel="stylesheet" href="">
+                        </ul>
+                        <br>
+                        <p><strong>Nota:</strong> Para transmitir a 1080p se recomienda mejorar la gráfica, a 720p es óptimo.</p>
+                    </div>
+                    <div class="recomendado">
+                        <h3>Recomendado</h3>
+                        <ul>
+                            <li>CPU: Intel i5-6600K o AMD Ryzen 5 1600</li>
+                            <link rel="stylesheet" href="">
+                            <li>RAM: 16 GB</li>
+                            <link rel="stylesheet" href="">
+                            <li>GPU: NVIDIA GTX 1060 o AMD RX 580 (4 GB VRAM)</li>
+                            <link rel="stylesheet" href="">
+                            <li>OS: Windows 10 de 64 bits</li>
+                            <link rel="stylesheet" href="">
+                            <li>Almacenamiento: 1 TB</li>
+                            <link rel="stylesheet" href="">
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <br>
+            <p>Se utiliza el mismo software de streaming que para Call of Duty Warzone.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Trabajo Práctico | Información de Requisitos de Hardware | Creado para el usuario.</p>
+        <p>&copy; 2025</p>
+    </footer>
+
+</body>
+</html>

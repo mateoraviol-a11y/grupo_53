@@ -1,0 +1,580 @@
+<html>
+
+<head>
+    <title>Trabajo Práctico N°1 - Fundamentos de Computación</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .caratula {
+            font-size: 20px;
+        }
+
+        .juegos {
+            text-align: left;
+        }
+
+        .callof {
+            font-size: 15px;
+            background-color: #001f07;
+            color: #ffffff;
+        }
+
+        .h {
+            font-size: 22px;
+            padding: 1%;
+        }
+
+        .juegos article {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .juegos li {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            list-style: none;
+            border-radius: 15px;
+        }
+
+        .juegos section {
+            margin: 20px 0;
+            padding: 10px;
+            font-size: 19px;
+        }
+
+        .juegos img {
+            text-align: center;
+            margin: 15px;
+            display: inline-block;
+            border-radius: 20px;
+            width: 400px;
+            height: 200px;
+        }
+
+        .presu {
+            display: block;
+            text-align: center;
+        }
+
+        .presu p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: rgb(41, 41, 41);
+        }
+
+        .presu img {
+            text-align: center;
+            margin: 15px;
+            border-radius: 20px;
+            width: 400px;
+            height: 200px;
+        }
+
+        .pagina li {
+            border: 2px solid #be6f6f;
+            padding: 10px;
+            margin-bottom: 10px;
+            list-style: none;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+
+        .apex {
+            font-size: 15px;
+            background-color: #ff4500;
+            color: #ffffff;
+        }
+
+        .apex li {
+            border: 2px solid #00baff;
+        }
+
+        .pubg {
+            font-size: 15px;
+            background-color: #1e3a5f;
+            color: #ffffff;
+        }
+
+        .pubg li {
+            border: 2px solid #5f431e;
+        }
+
+        .callof li {
+            border: 2px solid #1f0018;
+        }
+
+        .pagina {
+            font-size: 15px;
+            background-color: #94b0bb;
+            color: #ffffff;
+        }
+
+        .pagina ul {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            padding: 0;
+        }
+
+        .ia {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 20px;
+            background: radial-gradient(circle at 20% 30%, #1c2541, #0b132b 70%);
+            color: #e0e0e0;
+            font-family: "Poppins", sans-serif;
+            background-size: 200% 200%;
+            animation: moveBackground 25s ease-in-out infinite;
+            box-shadow: 0 0 15px rgba(91, 192, 190, 0.3);
+        }
+
+        /* Movimiento suave del fondo */
+        @keyframes moveBackground {
+            0% {
+                background-position: 20% 30%;
+            }
+
+            50% {
+                background-position: 80% 70%;
+            }
+
+            100% {
+                background-position: 20% 30%;
+            }
+        }
+
+        /* Textos dentro de la sección IA */
+        .ia h1,
+        .ia h2,
+        .ia p {
+            text-shadow: 0 0 10px rgba(91, 192, 190, 0.3);
+            margin: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="caratula">
+        <h1>Trabajo practico N°1 Streaming de video juegos</h1>
+        <p>Universidad: Universidad Autónoma de Entre Ríos</p>
+        <p>facultad: Facultad de Ciencia y Tecnología</p>
+        <p>carrera: Licenciatura en Sistemas de Información</p>
+        <p>Cátedra: Fundamentos de Computación</p>
+        <p>Trabajo Práctico: Streaming de videojuegos</p>
+        <p>Profesores: Ismael Cassi y Paolo Orundés Cardinali</p>
+        <p>Integrantes: Mateo Raviol, Matias Ferreira, Exequiel agustin David, Juan Ignacion Passarino </p>
+        <p>Comicion: Miercoles 15hs </p>
+        <p>Fecha de entrega: 31/10/2025</p>
+        <p>Año lectivo: 2025</p>
+    </div>
+    <hr>
+
+    <h2>JUEGOS ELEGIDOS</h2>
+    <div class="juegos">
+        <div class="callof">
+            <div class="h">
+                <p>Call of duty warzone</p>
+            </div>
+            <img src="img/cod/CODWZ_S1-X1_-1920x1080-enUS_JPG-7bfcc41943e5c8cfdb37-d86e258b3fb5ce954692.jpg"
+                alt="img 1">
+            <img src="img/cod/286beef8-b62c-441f-87ee-5954452c0a17.png" alt="img 2">
+            <img src="img/cod/hq720.jpg" alt="img 3">
+            <section>
+                <p> acontinuacion se mostraran los componentes minimos y recomendados para stremear a 1080p a 60 fps
+                    call of duty warzone</p>
+                <article>
+                    <lo>
+                        <p>MINIMO:</p>
+                        <li>CPU: Intel Core i3-6100 o AMD Ryzen 3 1200</li>
+                        <li>RAM: 8gb</li>
+                        <li>GPU: nvidia gtx 960 o AMD RX 470 (2 GB VRAM)</li>
+                        <li>OS: windows 10 64 bits</li>
+                        <li>almacenamiento 1T</li>
+                        <p>nota: para trasmitir a 1080 se recomienda mejorar la grafica, a 720 es optimo</p>
+                    </lo>
+                </article>
+                <article>
+                    <lo>
+                        <p>RECOMENDADO:</p>
+                        <li>CPU:Intel Core i5-6600K / i7-4770 o AMD Ryzen 5 1400 </li>
+                        <li>RAM: 12 GB </li>
+                        <li>GPU: NVIDIA GTX 1060 o AMD RX 580 (4 GB VRAM)</li>
+                        <li>OS: windows 10 64 bits</li>
+                        <li>almacenamiento 1T</li>
+                    </lo>
+                </article>
+                <article>
+                    <lo>
+                        <p>Software para el stream: </p>
+                        <li>OBS studio: usado para stremear</li>
+                        <li>streamlabs: usado para las alertas</li>
+                        <li>Voicemeeter: para controlar audio de micrófono, música y juego</li>
+                        <li>Irium webcam: usado para obtener microfono y webcam del celular, dando la posibilidad de
+                            consumir menos recursos y ademas obteniendo coneccion inalambrica</li>
+                    </lo>
+                </article>
+            </section>
+        </div>
+        <div class="pubg">
+            <div class="h">
+                <p>PUGB BATTLEGROUNDS</p>
+            </div>
+            <img src="img/pubg/eac91c26-58d0-4f7d-81e0-d55d0a2650cb.jpg" alt="img 1">
+            <img src="img/pubg/PUBG-BATTLEGROUNDS-presenta-dos-nuevas-caracteristicas-01.jpg" alt="img 2">
+            <img src="img/pubg/41522dea-19ea-479d-adbf-dea15dee6f02.jpg" alt="img 3">
+            <section>
+                <p> acontinuacion se mostraran los componentes minimos y recomendados para stremear a 1080p a 60 fps
+                </p>
+                <article>
+                    <lo>
+                        <p>MINIMO:</p>
+                        <li>CPU: Intel i5-4430 o AMD FX-6300 </li>
+                        <li>RAM: 8 GB </li>
+                        <li>GPU: NVIDIA GTX 960 o AMD Radeon R7 370 (2 GB VRAM)</li>
+                        <li>OS: windows 10 64 bits</li>
+                        <li>almacenamiento 1T</li>
+                        <p>nota: para trasmitir a 1080 se recomienda mejorar la grafica, a 720 es optimo</p>
+                    </lo>
+                </article>
+                <article>
+                    <lo>
+                        <p>RECOMENDADO:</p>
+                        <li>CPU: Intel i5-6600K o AMD Ryzen 5 1600</li>
+                        <li>RAM: 16 GB</li>
+                        <li>GPU: NVIDIA GTX 1060 o AMD RX 580 (4 GB VRAM)</li>
+                        <li>OS: windows 10 64 bits</li>
+                        <li>almacenamiento 1T</li>
+                    </lo>
+                </article>
+                <article>
+                    <lo>
+                        <p>Software para el stream: </p>
+                        <li>OBS studio: usado para stremear</li>
+                        <li>streamlabs: usado para las alertas</li>
+                        <li>Voicemeeter: usado para controlar audio de micrófono, música y juego</li>
+                        <li>Irium webcam: usado para obtener microfono y webcam del celular, dando la posibilidad de
+                            consumir menos recursos y ademas obteniendo coneccion inalambrica</li>
+                    </lo>
+                </article>
+            </section>
+        </div>
+        <div class="apex">
+            <div class="h">
+                <p>APEX LEGENDS</p>
+            </div>
+            <img src="img/apex/capsule_616x353.jpg" alt="img 1">
+            <img src="img/apex/ss_e2d5d1e30c6482a63b65e054193b05edf373ea3c.1920x1080.jpg" alt="img 2">
+            <img src="img/apex/b154954e-5aeb-4009-9947-b39a28ce3c06.jpg" alt="img 3">
+            <section>
+                <p> acontinuacion se mostraran los componentes minimos y recomendados para stremear a 1080p a 60 fps
+                </p>
+                <article>
+                    <lo>
+                        <p>MINIMO:</p>
+                        <li>CPU: Intel Core i3-6300 o AMD FX-4350</li>
+                        <li>RAM: 6 GB</li>
+                        <li>GPU: NVIDIA GTX 950 o AMD Radeon HD 7790 (2 GB VRAM) </li>
+                        <li>OS: windows 10 64 bits</li>
+                        <li>almacenamiento 1T</li>
+                        <p>nota: para trasmitir a 1080 se recomienda mejorar la grafica, a 720 es optimo</p>
+                    </lo>
+                </article>
+                <article>
+                    <lo>
+                        <p>RECOMENDADO:</p>
+                        <li>CPU: Intel i5-3570K o AMD Ryzen 5 1400</li>
+                        <li>RAM: 8 GB</li>
+                        <li>GPU: NVIDIA GTX 970 o AMD Radeon R9 290 (6 GB VRAM) </li>
+                        <li>OS: windows 10 64 bits</li>
+                        <li>almacenamiento 1T</li>
+                    </lo>
+                </article>
+                <article>
+                    <lo>
+                        <p>Software para el stream: </p>
+                        <li>OBS studio: usado para stremear</li>
+                        <li>streamlabs: usado para las alertas</li>
+                        <li>Voicemeeter: para controlar audio de micrófono, música y juego</li>
+                        <li>Irium webcam: usado para obtener microfono y webcam del celular, dando la posibilidad de
+                            consumir menos recursos y ademas obteniendo coneccion inalambrica</li>
+                    </lo>
+                </article>
+            </section>
+        </div>
+        <div class="pagina">
+            <div class="h">
+                <p>Presupuestos</p>
+            </div>
+            <div class="presu">
+                <img src="img/presu/phpresu.jpg" alt="img 2">
+                <p>Paraná hardware</p>
+            </div>
+            <section>
+                <article>
+                    <ul>
+                        <lo>
+                            <li>CPU: Intel Core i5 12400F alder lake 246.500$</li>
+                            <li>Características técnicas: con sus 6 nucleos y 12 hilos, con arquitectura alder lake, con
+                                un socket LGA1700 y sin grafica (F) </li>
+                            <li>Fuente: Parana hardware (246.500$ pesos / 173$ dolares)</li>
+                            <li>Elegido por su alto rendimiento en multifuncion, necesario para poder jugar y stremear
+                                en alta resolucion, alta eficiencia energetica y rendimiento por nucleo, con precio
+                                competivo lo convierte en algo atractivo al gaming</li>
+                            <li>Descartado: ryzen 5 5600x (preferentemente prefiero intel, ademas que en el multi-task
+                                intel es mejor, necesario para stremear y jugar, poca diferencia afavor de intel, misma
+                                fuente)</li>
+                        </lo>
+                        <lo>
+                            <li>MOTHER BOARD: Asus H610M-K 144.910$</li>
+                            <li>Características técnicas: soporte a la gen 12 de intel hasta 64GB de ram con tecnologia
+                                DDR4 y con inteligencia usb de hasta 3.2</li>
+                            <li>Fuente: Parana hardware (144.910$ pesos / 101$ dolares)</li>
+                            <li>Elegido por su estabilidad y compatibilidad con los procesadores Alder Lake, además de
+                                contar con características modernas como soporte para PCIe 4.0 y múltiples puertos de
+                                conectividad</li>
+                            <li>Descartado: msi pro b760M-E (muy cara)</li>
+                        </lo>
+                        <lo>
+                            <li>RAM: adata XPG D35 Gammix 16GB 3200Mhz DDR4 95.550$ </li>
+                            <li>Características técnicas: Cuenta con 16GB, a una frecuencia de 3200Mhz con tecnologia
+                                ddr4, </li>
+                            <li>Fuente: Parana hardware (95.550$ pesos / 67$ dolares) </li>
+                            <li>Elegido por cumplir, 16 gigas a una buena velocidad, recomendadas para que no aparescan
+                                tirones en el stream ni durante el juego o la edicion, el multi-task y para el uso de
+                                varios monitores</li>
+                            <li>Descartado: verdaderamente en ram es una comun, como descartadas no hay, muy poca
+                                diferencia de precio y la elegida es de media gama a buen precio</li>
+                        </lo>
+                        <lo>
+                            <li>GRAFICA: MSI Ventus RTX 5050 8gb 578.650$</li>
+                            <li>Características técnicas: GDDR6, 8gb de vram, DlSS 4, soporta ray tracing </li>
+                            <li>Fuente: Parana hardware (578.650$ pesos / 406$ dolares) </li>
+                            <li>Elegida por ser de ultima generacion al momento del presupuesto, soporta juegos a 1080p
+                                con configuraciones muy altas sin perdida de fps, superando en calidad a la 3050, con
+                                una grafica de tan alto rendimiento podrias stremear y jugar sin ningun problema </li>
+                            <li>Descartado: ventus rtx 3050 8gb (descartada por la otra ser nueva generacion y
+                                difenrencia de solo 100.000$ cien mil pesos) </li>
+                        </lo>
+                        <lo>
+                            <li>FUENTE: Aureox ARXGP 600W 80.710$</li>
+                            <li>Características técnicas: serie powerful, certificacion de bronce, 600W, conectividad a
+                                220V, refigeracion por aire</li>
+                            <li>Fuente: Parana hardware (80.710$ pesos / 56$ dolares) </li>
+                            <li>Elegido por entregar los Wats que necesitamos, tener los conectores que necesitamos para
+                                el hardware que ponddremos en el equipo, </li>
+                            <li>Descartado: gigabyte 650W (por solo diferenciar 50W y ser cerificacion silver se opto
+                                por la otra ya que no deja de ser una mala fuente y 15.000$ quince mil pesos no hace la
+                                gran diferencia)</li>
+                        </lo>
+                        <lo>
+                            <li>GABINETE: Sentey M12 ARGB 53.500$</li>
+                            <li>Características técnicas: tecnologia USB-3.0, 3 ventiladores argb, vidrio lateral
+                                templado, soporte de placa ATX</li>
+                            <li>Fuente: Parana hardware (53.500$ pesos / 37$ dolares)</li>
+                            <li>Elegido por su lindo diseño, tanto en blanco como en negro, buena refrigeracion, con un
+                                lindo panel de vidrio para poder ver el interior del gabinete, y dentro de un buen
+                                precio competivo</li>
+                            <li>Descartado: sentey h10 argb (30.000$ treinta mil pesos, siendo tambien varato no se
+                                compara con lo secundario que es para el stream, busque una opcion mas barata) </li>
+                        </lo>
+                        <lo>
+                            <li>MONITOR: Teros 24p FHD IPS 120Hz 184.180$</li>
+                            <li>Características técnicas: 24 pulgadas, 120Hz, resolucion full HD y con panel IPS </li>
+                            <li>Fuente: Parana hardware (184.180$ pesos / 129$ dolares)</li>
+                            <li>Elegido por la tecnologia IPS, su tan buena resolucion, su alta taza de refresco, con
+                                unas pulgadas optimas para poder stremear comodo, con muy buena definicion de colores
+                                ideales para el gaming</li>
+                            <li>Descartado: LG led 24&QUOT (casi treinta mil pesos y 20HZ menos, aunque que a mi parecer
+                                preferiria la marca LG, 120HZ para tener un buen stream lo hace mas fluido desde mi
+                                perspectiva) </li>
+                        </lo>
+                        <lo>
+                            <li>MOUSE: Redragon K1NG M724 27.320$</li>
+                            <li>Características técnicas: sensor optico de hasta 12400 DPI, tasa de 1000Hz, 5 botones
+                                configurables, con cable, 42g de peso</li>
+                            <li>Fuente: Parana hardware (27.320$ pesos / 19$ dolares)</li>
+                            <li>Elegido por su simplesa y confiabilidad </li>
+                            <li>Descartado: logitech G203 (son solo 7.000$ siete mil pesos de diferencia, a mi
+                                preferencia en perifericos me gusta mas redragon por eso el descarte de este, aunque
+                                pueda ser mejor el logitech)</li>
+                        </lo>
+                        <lo>
+                            <li>AURICULARES: HYLAS BLACK H260RGB 48.440$</li>
+                            <li>Características técnicas: 2M de cable, 110 dB, cancelacion de ruido en microfono y
+                                bocinas, con microfono desmontable, con iluminacion RGB, </li>
+                            <li>Fuente: Parana hardware (48.440$ pesos / 34$ dolares)</li>
+                            <li>Elegido por su diceño su inmercion por la cancelacion de ruido por su calida de sonido y
+                                alta definicion de auido con esa cancelacion incorporada en el microfono comodidad en
+                                gomas, calidad y confiabilidad</li>
+                            <li>Descartado: logitech G535 (muchisima difenrencia de precio al rededoor de los 220.000$
+                                pesos aunque estos sean de alticima calidad de sonido, muy fuera de presupuesto)</li>
+                        </lo>
+                        <lo>
+                            <li>TECLADO: Redragon shiva RGB K512RGB 53.090$</li>
+                            <li>Características técnicas: switch de membrana(recomendado cambiar a uno mecanico) 100%,
+                                con reposa muñeca, idioma español latam, antighosting</li>
+                            <li>Fuente: Parana hardware (53.090$ pesos / 37$ dolares)</li>
+                            <li>Elegido por la cantidad de teclas extras que se pueden configurar para llegar a un mejor
+                                stream, ademas con el apoya muñecas acompaña la comodidad de pasar muchas horas con el
+                                teclad, con estas caracteristicas uno mecanico aumenta mucho el precio, pero estaria
+                                bueno cambiarlo al tiempo ya q los de membrana no son recomendados para pasar mucho
+                                tiempo con el teclado</li>
+                            <li>Descartado: redragon fizz pro black K616 (solamente descartado porque el otro cuenta con
+                                un par de teclas extras configurables para facilitar el stream) </li>
+                        </lo>
+                        <lo>
+                            <li>WEBCAM: Redragon FOBOS GW600 54.070$</li>
+                            <li>Características técnicas: cable de 1.7 metros, angulo de 68.6°, 30 fps, con alta
+                                tecnologia</li>
+                            <li>Fuente: Parana hardware (54.070$ pesos / 38$ dolares)</li>
+                            <li>Elegido por su confiabilidad, la alta capacidad de correcion a la luz, con buen
+                                microfono por si no anda el del auricular, muy buena defincion, mas estable que otras en
+                                el mercado, corre hasta en linux y con bajo consumo</li>
+                            <li>Descartado: logitech C920S ( mas de 120.000$ pesos de difenrencia, exediendo el
+                                presupuesto)</li>
+                        </lo>
+                        <lo>
+                            <li>ALMACENAMIENTO: M.2 WD 1TB green sn350 83.500$</li>
+                            <li>Características técnicas: 1 terabit de almacenamiento, a 2400 megabit por segundo </li>
+                            <li>Fuente: compra gamer (83.500$ pesos / 58$ dolares)</li>
+                            <li>Elegido por su cantidad de almacenamiento a buen precio, tan buena repuesta, es facil de
+                                configurar en la pc, confiabilidad asegurada, si tenes que descargar algo durante el
+                                stream con la lectura de este disco se podria hacer bastante rapido, a comparacion de
+                                otros medios de almacenamiento</li>
+                            <li>Descartado: kingston ssd A400 de 960gb (ademas de ser mas caro dentro de PH, el elejido
+                                en un almacenamiento m.2, mucho mas rapido, muy valorado para el stream y poder
+                                actualizar los juegos mas rapido, con una escritura y leida a alta velocidad, ultima en
+                                tecnologia)</li>
+                        </lo>
+                        <lo>
+                            <li>ESTABILIZADOR: Estabilizador De Tension Lyonn Tca 1200w 1200va 6 Tomas Color Negro
+                                $51.999 </li>
+                            <li>Caracteristicas tecnicas: 220V de entrada y de salida, voltaje mono, 6 tomas, maximo de
+                                ruido de 40dB</li>
+                            <li>Fuente: mercado libre
+                                (https://www.mercadolibre.com.ar/estabilizador-de-tension-lyonn-tca-1200w-1200va-6-tomas-color-negro/p/MLA6208662?has_official_store=false&highlight=true&headerTopBrand=true#polycard_client=search-nordic&search_layout=stack&position=3&type=product&tracking_id=b2803f65-b4ab-48b6-bb12-a31b5d88696b&wid=MLA913284265&sid=search)(51.999$
+                                pesos / 36$ dolares)</li>
+                            <li>Descartado: powersafe gamer 4000va (descartado por 20.000$ veinte mil pesos de
+                                diferencia)</li>
+
+                        </lo>
+                    </ul>
+                    <p> total 1191 dolares </p>
+                </article>
+                <article>
+                    <img src="img/fps/cuello de botella.png" alt="img 1">
+                    <img src="img/fps/fps callof.png" alt="img 2">
+                    <img src="img/fps/fps pugb.png" alt="img 3">
+                    <img src="img/fps/fps apex.png" alt="img 4">
+
+                    <p>img 1: cuello de botella</p>
+                    <p>img 2: fps esperado para el callof</p>
+                    <p>img 3: fps esperado para el pugb</p>
+                    <p>img 4: fps esperado para el apex</p>
+                    <p>fuente pc-build.com</p>
+                </article>
+        </div>
+        <div class="ia">
+            <img src="img/pront ia/ft1.jpg" alt="1">
+            <p>Aunque no se halla espesificado el juego exacto pudo hacercarce bastante "promediando" los requisitos del
+                proce</p>
+            <img src="img/pront ia/6.jpg" alt="2">
+            <p>Ya con el juego exacto si pudo buscar de todos los componentes y justificando un poco su elexion</p>
+            <img src="img/pront ia/7.jpg" alt="3">
+            <p>Busca los requirimientos para un buen rendimiento</p>
+            <img src="img/pront ia/4.jpg" alt="4">
+            <p>en su busqueda se tira por los de amd, mas preferentemente del ryzen 5 </p>
+            <img src="img/pront ia/5.jpg" alt="5">
+            <p>Busca maximizar su busqueda con los requirimientos que exigia antes entre los ryzen aparece un intel</p>
+            <img src="img/pront ia/3.jpg" alt="6">
+            <p>Con el pront buscando ser lo mas economico busca y compara precios sin alejarce tanto de los proce antes
+                nombrados</p>
+            <img src="img/pront ia/8.jpg" alt="7">
+            <p>Comparando lo mejor de cada marca y justificando </p>
+            <img src="img/pront ia/9.jpg" alt="8">
+            <p>Muy importante que aparesca su recomendacion personal, ya que si es consultante no entiende mucho puede
+                ayudarlo aun mas esta recomendacion</p>
+            <h1> Tabla comparativa Ryzen 5 5600G y el Intel I5-12400</h1>
+            <h2>Tabla chat gpt</h2>
+            <img src="img/pront ia/tabla compa.png">
+            <p>Fuente: https://chatgpt.com/share/68ed9217-19ac-800b-a73d-e40a5bd1dfb6</p>
+
+            <h2>Tabla fuente pccomponentes</h2>
+            <img src="img/pront ia/tpc1.png">
+            <img src="img/pront ia/tpc2.png">
+            <p>Fuente: https://www.pccomponentes.com/amd-ryzen-5-vs-intel-core-i5</p>
+
+            <p>Eleccion: Dentro de mis razones para elegir el intel, se encuentran la preferencia de marca, ademas que para tareas complejas es mejor
+                en el multi-task tambien y hoy en dia es lo que se requeire, el amd, gana porque tiene buena integrada, si lo unico que importaria seria 
+                una rama de juegos basicos seria la mejor opcioon, pero la computadora es una herramienta, por eso y las tablas de antes me quedo 100% con
+                el Intel I5-12400
+            </p>
+
+            <h1>Lenguaje tecnico IA - Lenguaje comun Humano</h1>
+            <h2>Tecnico:</h2><p> 🎮 Función de la GPU en una PC gamer
+
+                La GPU (Unidad de Procesamiento Gráfico) es el componente encargado de procesar y renderizar los
+                gráficos que ves en pantalla, especialmente en videojuegos. Su función principal es realizar cálculos
+                masivos en paralelo para transformar datos en imágenes fluidas y detalladas.
+
+                🔧 Funciones técnicas clave:
+
+                Renderizado gráfico: convierte la información del juego (modelos 3D, texturas, luces, sombras) en los
+                píxeles que se muestran en el monitor.
+
+                Aceleración por hardware: libera al CPU de tareas gráficas pesadas, mejorando el rendimiento general del
+                sistema.
+
+                Procesamiento paralelo: cuenta con miles de núcleos pequeños que ejecutan operaciones simultáneamente,
+                ideales para gráficos en tiempo real.
+
+                Gestión de memoria VRAM: almacena texturas, sombreadores y datos visuales para que el acceso sea rápido
+                y sin interrupciones.
+
+                Compatibilidad con APIs gráficas (DirectX, Vulkan, OpenGL): permite aprovechar al máximo las tecnologías
+                visuales modernas (ray tracing, DLSS, etc.).
+
+                ⚡ En resumen:
+
+                La GPU es el corazón visual de una PC gamer. Cuanto más potente sea, mayor será la calidad gráfica, la
+                fluidez de los fotogramas (FPS) y la capacidad de usar efectos avanzados sin afectar el rendimiento.</p>
+            
+            <h2>Lenguaje comun:</h2><p> La gpu o tarjeta grafica es la que controla todo lo que se muestra por pantalla, liberando al
+                procesador de esta funcion, mejora los graficos,
+                mejora los fps (hace una imagen mas fluido mayor fps + fluides de imagen) </p>
+
+            <h1>Imagen generada por IA</h1>
+            <img src="img/pront ia/_3bafae59-90cd-4e5b-9e2e-a2e63d3a3b5b.jpg">
+            <h2>prompt usado:</h2>
+            <p>Set up de escritorio de un streamer principiante</p>
+            <h2>mensaje que se busca trasmitir:</h2>
+            <p>un set up sencillo, capaz de poder hacer stream, con microfono, camara, auris, necesarios para esta causa
+                la parte del principiante es para alguien que recien empieza, ajustandoce a un presupuesto inicial, 
+                ya que como principiante compras lo justo y necesario y con el tiempo va progresando este progreso
+            </p>
+
+            <h1>CONCLUSION FINAL</h1>
+            <h2>¿Cómo te ayudó la IA en este trabajo?</h2>
+            <p>La ia me facilito varias cosas, ya sea para saber bien el uso de cada etiquetas, me ayudo a organizar un poco la informacion,
+                a dejar un poco mas prolijo el trabajo, me ayudo a dejar mas como yo queria el trabajo
+            </p>
+            <h2>¿Detectaste errores o información poco confiable? ¿Cómo lo resolviste?</h2>
+            <p>Si detecte errores en su principal. Lo resolvi pidiendo que que revise su informacion o en cosas que yo sabia que estaba mal, 
+                le remarque esto me parece q no es asi revisa y listo, chatgpt revisaba y se retractaba de lo que habia dicho
+            </p>
+            <h2>¿En qué casos preferís buscar información manualmente en lugar de usar IA?</h2>
+            <p>Prefiero buscar cosas que se, o si busco algo que no se, lo busco aparte y despues mas o menos sabiendo y habiendo 
+                leido un poco, le pregunto y ya se si me esta respondiendo bien o esta muy equivocado
+            </p>
+
+        </div>
+</body>
+
+</html>
